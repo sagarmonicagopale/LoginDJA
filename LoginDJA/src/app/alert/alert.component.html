@@ -1,0 +1,15 @@
+<div *ngIf="isError==true && status =='success'" class="alert alert-success">
+  <strong>Success!</strong> {{msg}}
+</div>
+
+<div *ngIf="isError==true && status =='info'" class="alert alert-info">
+  <strong>Info!</strong> {{msg}}
+</div>
+
+<div *ngIf="isError==true && status =='warning'" class="alert alert-warning">
+  <strong>Warning!</strong> {{msg}}
+</div>
+
+<div *ngIf="isError==true && status =='danger'" class="alert alert-danger">
+  <strong>Error!</strong> {{msg}}
+</div>

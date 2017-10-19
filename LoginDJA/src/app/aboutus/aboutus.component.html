@@ -1,0 +1,35 @@
+<!-- Load header page from shared/layout-->
+<app-header></app-header>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">About US</h1>
+    <p>About us Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+      nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+  </div>
+</div>
+
+<!-- container for about us -->
+<div class="container">
+  <div class="row row-menu">
+    <div class="col-md-8">
+      <div class="btn-group btn-group-justified">
+        <div class="btn-group">
+          <a routerLink="/aboutus/profile" routerLinkActive="active" class="btn btn-primary active">Profile</a>
+        </div>
+        <div class="btn-group">
+          <a routerLink="/aboutus/team" routerLinkActive="active" class="btn btn-primary">Team</a>
+        </div>
+        <div class="btn-group">
+          <a routerLink="/aboutus/contact" routerLinkActive="active" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+
+  <hr>
+  <!-- Load footer page from shared/layout-->
+  <app-footer></app-footer>
+</div>
+<!-- /container -->
